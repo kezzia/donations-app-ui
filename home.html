@@ -4,28 +4,65 @@
 	<link rel="stylesheet" href="styles.css">
 	<meta charset="UTF-8">
 	<center><title>HU Donation App</title></center>
-</head>
+	<script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+
+<!-- normal script imports etc  -->
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	</head>
 
 <body>
-	<div class="basic-af">
-		<h1>Howard University Donation App</h1>
-		<p>Please input your project information below:</p>
-	</div><br>
+	<div class="row">
+  	<div class="col-md-1">
+			<h1>Howard University Donation App</h1>
+			<br><br>
+			<center>
+			<p>Input Project Information Below:</p>
+			<center>
+		</div>
+	</div>
+<br><br><br><br><br>
+<center>
 	<form>
-		Project:<br>
-		<input id="name" type="text" name="project"><br>
+	  <div class="form-group">
+	    <label for="exampleInputEmail1">Project Name</label>
+	    <input type="email" class="form-control" id="name" placeholder="name">
+	  </div>
+	  <div class="form-group">
+	    <label for="exampleInputPassword1">Project Category</label>
+	    <input type="password" class="form-control" id="category" placeholder="category">
+	  </div>
+		<div class="form-group">
+			<label for="exampleInputDescription">Project Description</label>
+			<input type="description" class="form-control" id="description" placeholder="description">
+		</div>
+				<form class="form-inline">
+			  <div class="form-group">
+			    <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+			    <div class="input-group">
+			      <div class="input-group-addon">$</div>
+			      <input type="text" class="form-control" id="goal" placeholder="Amount">
+			      <div class="input-group-addon">.00</div>
+			    </div>
+			  </div>
+			</form>
+
+	  <div class="form-group">
+	    <label for="exampleInputFile">Attach Image</label>
+	    <input type="file" id="exampleInputFile">
+	    <p class="help-block">Howard University, Established 1867.</p>
+	  </div>
+	  <button type="submit" class="btn btn-default" id="submit" onclick="submitted()">Submit</button>
 	</form>
-  		Project Image:<br>
-  		<script>require('./input.js')</script>
-  	<form>
-  		Project Category:<br>
-  		<input id="category" type="text" name="projectCategory"><br>
-  		Description:<br>
-  		<input id="description" type="text" name="projectDescription"><br>
-  		Goal:<br>
-  		<input id="goal"type="text" name="fundGoal"><br>
-  		<script>require('./home.js')</script>
-	</form>
+</center>
+	<script src="home.js"></script>
 </body>
 
 </html>
