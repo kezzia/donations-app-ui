@@ -6,4 +6,3 @@ app.on('ready', () => {
 	win.loadURL('file://' + __dirname + '/home.html')
 	win.webContents.openDevTools()
 })
-

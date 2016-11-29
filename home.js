@@ -10,17 +10,16 @@ button.addEventListener('click', () => {
   var project_goal = document.getElementById("goal").value
 
   console.log(project_name)
-  console.log(project_image)
   console.log(project_category)
   console.log(project_description)
   console.log(project_goal)
 
   document.getElementById("name").value = ""
-  document.getElementById("image").value = ""
   document.getElementById("category").value = ""
   document.getElementById("description").value = ""
   document.getElementById("goal").value = ""
+  location.href = "./submitted.html";
+
 }, false)
 
 document.body.appendChild(button)
-
