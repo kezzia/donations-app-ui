@@ -24,7 +24,7 @@
 			<h1>Howard University Donation App</h1>
 			<br><br>
 			<center>
-			<p>Input Project Information Below:</p>
+			<h3>Input Project Information Below:</h3>
 			<center>
 		</div>
 	</div>
@@ -41,7 +41,7 @@
 	  </div>
 		<div class="form-group">
 			<label for="exampleInputDescription">Project Description</label>
-			<input type="description" class="form-control" id="description" placeholder="description">
+			<textarea class="form-control" rows="3" id="description"></textarea>
 		</div>
 				<form class="form-inline">
 			  <div class="form-group">
@@ -59,10 +59,10 @@
 	    <input type="file" id="exampleInputFile">
 	    <p class="help-block">Howard University, Established 1867.</p>
 	  </div>
-	  <button type="submit" class="btn btn-default" id="submit" onclick="submitted()">Submit</button>
+	  <button type="submit" class="btn btn-primary btn-lg" id="submit" onclick="submitted()">Submit</button>
 	</form>
 </center>
-	<script src="home.js"></script>
+	<script src="home.js">if (typeof module === 'object') {window.module = module; module = undefined;}</script>
 </body>
 
 </html>

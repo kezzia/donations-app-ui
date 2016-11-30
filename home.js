@@ -21,3 +21,9 @@ function submitted(){
     location.href = "./submitted.html"
 
 };
+
+function anotherDocument(){
+
+    location.href = "./home.html"
+
+};
